@@ -86,6 +86,7 @@ GameObject:
   - 92: {fileID: 3506577}
   - 124: {fileID: 3506576}
   - 81: {fileID: 3506575}
+  - 114: {fileID: 3506580}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -132,7 +133,7 @@ Camera:
     height: 1
   near clip plane: .300000012
   far clip plane: 1000
-  field of view: 60
+  field of view: 30
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -142,7 +143,7 @@ Camera:
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
-  m_HDR: 0
+  m_HDR: 1
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: .0219999999
@@ -152,12 +153,24 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 3506574}
-  m_LocalRotation: {x: .342020124, y: 0, z: 0, w: .939692616}
-  m_LocalPosition: {x: 0, y: 4.67000008, z: -8.67000008}
+  m_LocalRotation: {x: .1305262, y: 0, z: 0, w: .991444886}
+  m_LocalPosition: {x: 0, y: 5, z: -15}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 627921114}
   m_RootOrder: 0
+--- !u!114 &3506580
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 3506574}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01fa5f6ca47ce70458e759730c880b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cueBall: {fileID: 1725968991}
 --- !u!1 &15543147
 GameObject:
   m_ObjectHideFlags: 0
@@ -189,7 +202,7 @@ Transform:
   - {fileID: 21964587}
   - {fileID: 1457843216}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
 --- !u!1 &21964583
 GameObject:
   m_ObjectHideFlags: 0
@@ -421,7 +434,7 @@ Transform:
   - {fileID: 1774975360}
   - {fileID: 1255088574}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
 --- !u!1 &590928469
 GameObject:
   m_ObjectHideFlags: 0
@@ -534,12 +547,13 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 627921113}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -5.86000013}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 3506579}
   - {fileID: 1725968996}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
 --- !u!114 &627921115
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1463,7 +1477,7 @@ GameObject:
   - 23: {fileID: 1725968993}
   - 54: {fileID: 1725968992}
   m_Layer: 0
-  m_Name: SnookerBall
+  m_Name: CueBall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1534,11 +1548,11 @@ Transform:
   m_PrefabInternal: {fileID: 1972144288}
   m_GameObject: {fileID: 1725968991}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: .479999989, z: 0}
+  m_LocalPosition: {x: 0, y: .479999989, z: -5.71000004}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 627921114}
-  m_RootOrder: 0
+  m_RootOrder: 1
 --- !u!1001 &1740736695
 Prefab:
   m_ObjectHideFlags: 0
@@ -1633,7 +1647,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 0
 --- !u!1 &1774975355
 GameObject:
   m_ObjectHideFlags: 0
@@ -1855,6 +1869,18 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ddab3fc00532b1740bcf4d18e0325a47, type: 2}
+    - target: {fileID: 440578, guid: dda3ea8527f0bd8428add517d5098b71, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 140578, guid: dda3ea8527f0bd8428add517d5098b71, type: 2}
+      propertyPath: m_Name
+      value: CueBall
+      objectReference: {fileID: 0}
+    - target: {fileID: 440578, guid: dda3ea8527f0bd8428add517d5098b71, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -5.71000004
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: dda3ea8527f0bd8428add517d5098b71, type: 2}
   m_RootGameObject: {fileID: 1725968991}
