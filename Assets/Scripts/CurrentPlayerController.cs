@@ -6,8 +6,6 @@ public class CurrentPlayerController : MonoBehaviour {
 	public int multiplier;
 
 	void Update () {
-		//Debug.Log (cueBall.rigidbody.IsSleeping ());
-		Debug.Log (Input.GetButton("Fire1"));
 		if (Input.GetButton("Fire1") && cueBall.rigidbody.IsSleeping()) {
 			Strike ();
 		}

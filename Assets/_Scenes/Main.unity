@@ -476,7 +476,7 @@ Rigidbody:
   serializedVersion: 2
   m_Mass: 3.5
   m_Drag: 0
-  m_AngularDrag: 1
+  m_AngularDrag: 2
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -566,7 +566,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cueBall: {fileID: 1725968991}
-  multiplier: 6000
+  multiplier: 1500
 --- !u!1 &898413642
 GameObject:
   m_ObjectHideFlags: 0
@@ -608,7 +608,7 @@ Rigidbody:
   serializedVersion: 2
   m_Mass: 3.5
   m_Drag: 0
-  m_AngularDrag: 1
+  m_AngularDrag: 2
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -754,7 +754,7 @@ Rigidbody:
   serializedVersion: 2
   m_Mass: 3.5
   m_Drag: 0
-  m_AngularDrag: 1
+  m_AngularDrag: 2
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -887,7 +887,7 @@ Rigidbody:
   serializedVersion: 2
   m_Mass: 3.5
   m_Drag: 0
-  m_AngularDrag: 1
+  m_AngularDrag: 2
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -1040,7 +1040,7 @@ Rigidbody:
   serializedVersion: 2
   m_Mass: 3.5
   m_Drag: 0
-  m_AngularDrag: 1
+  m_AngularDrag: 2
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -1161,7 +1161,7 @@ Rigidbody:
   serializedVersion: 2
   m_Mass: 3.5
   m_Drag: 0
-  m_AngularDrag: 1
+  m_AngularDrag: 2
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -1416,7 +1416,7 @@ Rigidbody:
   serializedVersion: 2
   m_Mass: 3.5
   m_Drag: 0
-  m_AngularDrag: 1
+  m_AngularDrag: 2
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -1493,7 +1493,7 @@ Rigidbody:
   serializedVersion: 2
   m_Mass: 3.5
   m_Drag: 0
-  m_AngularDrag: 1
+  m_AngularDrag: 2
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -1677,7 +1677,7 @@ Rigidbody:
   serializedVersion: 2
   m_Mass: 3.5
   m_Drag: 0
-  m_AngularDrag: 1
+  m_AngularDrag: 2
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -1810,7 +1810,7 @@ Rigidbody:
   serializedVersion: 2
   m_Mass: 3.5
   m_Drag: 0
-  m_AngularDrag: 1
+  m_AngularDrag: 2
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -1959,7 +1959,7 @@ Rigidbody:
   serializedVersion: 2
   m_Mass: 3.5
   m_Drag: 0
-  m_AngularDrag: 1
+  m_AngularDrag: 2
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
