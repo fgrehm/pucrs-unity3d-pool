@@ -267,8 +267,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 21964583}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: .5, z: 7.55999994}
-  m_LocalScale: {x: 11, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: .340000004, z: 7.55999994}
+  m_LocalScale: {x: 11, y: .699999988, z: 1}
   m_Children: []
   m_Father: {fileID: 15543148}
   m_RootOrder: 3
@@ -474,9 +474,9 @@ Rigidbody:
   m_PrefabInternal: {fileID: 1307263193}
   m_GameObject: {fileID: 590928469}
   serializedVersion: 2
-  m_Mass: 1
+  m_Mass: 3.5
   m_Drag: 0
-  m_AngularDrag: 2
+  m_AngularDrag: 1
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -566,7 +566,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cueBall: {fileID: 1725968991}
-  multiplier: 5000
+  multiplier: 6000
 --- !u!1 &898413642
 GameObject:
   m_ObjectHideFlags: 0
@@ -606,9 +606,9 @@ Rigidbody:
   m_PrefabInternal: {fileID: 1807714795}
   m_GameObject: {fileID: 898413642}
   serializedVersion: 2
-  m_Mass: 1
+  m_Mass: 3.5
   m_Drag: 0
-  m_AngularDrag: 2
+  m_AngularDrag: 1
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -681,8 +681,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 950650723}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5, y: .5, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 15}
+  m_LocalPosition: {x: 5, y: .340000004, z: 0}
+  m_LocalScale: {x: 1, y: .699999988, z: 15}
   m_Children: []
   m_Father: {fileID: 15543148}
   m_RootOrder: 1
@@ -752,9 +752,9 @@ Rigidbody:
   m_PrefabInternal: {fileID: 1176724748}
   m_GameObject: {fileID: 984346076}
   serializedVersion: 2
-  m_Mass: 1
+  m_Mass: 3.5
   m_Drag: 0
-  m_AngularDrag: 2
+  m_AngularDrag: 1
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -885,9 +885,9 @@ Rigidbody:
   m_PrefabInternal: {fileID: 1364793974}
   m_GameObject: {fileID: 1030477272}
   serializedVersion: 2
-  m_Mass: 1
+  m_Mass: 3.5
   m_Drag: 0
-  m_AngularDrag: 2
+  m_AngularDrag: 1
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -1038,9 +1038,9 @@ Rigidbody:
   m_PrefabInternal: {fileID: 279326439}
   m_GameObject: {fileID: 1255088573}
   serializedVersion: 2
-  m_Mass: 1
+  m_Mass: 3.5
   m_Drag: 0
-  m_AngularDrag: 2
+  m_AngularDrag: 1
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -1159,9 +1159,9 @@ Rigidbody:
   m_PrefabInternal: {fileID: 1740736695}
   m_GameObject: {fileID: 1342387821}
   serializedVersion: 2
-  m_Mass: 1
+  m_Mass: 3.5
   m_Drag: 0
-  m_AngularDrag: 2
+  m_AngularDrag: 1
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -1262,8 +1262,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1441693503}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5, y: .5, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 15}
+  m_LocalPosition: {x: -5, y: .340000004, z: 0}
+  m_LocalScale: {x: 1, y: .699999988, z: 15}
   m_Children: []
   m_Father: {fileID: 15543148}
   m_RootOrder: 2
@@ -1331,8 +1331,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1457843215}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: .5, z: -7.55999994}
-  m_LocalScale: {x: 11, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: .340000004, z: -7.55999994}
+  m_LocalScale: {x: 11, y: .699999988, z: 1}
   m_Children: []
   m_Father: {fileID: 15543148}
   m_RootOrder: 4
@@ -1414,9 +1414,9 @@ Rigidbody:
   m_PrefabInternal: {fileID: 997399181}
   m_GameObject: {fileID: 1647430446}
   serializedVersion: 2
-  m_Mass: 1
+  m_Mass: 3.5
   m_Drag: 0
-  m_AngularDrag: 2
+  m_AngularDrag: 1
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -1491,9 +1491,9 @@ Rigidbody:
   m_PrefabInternal: {fileID: 1972144288}
   m_GameObject: {fileID: 1725968991}
   serializedVersion: 2
-  m_Mass: 1
+  m_Mass: 3.5
   m_Drag: 0
-  m_AngularDrag: 2
+  m_AngularDrag: 1
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -1548,7 +1548,7 @@ Transform:
   m_PrefabInternal: {fileID: 1972144288}
   m_GameObject: {fileID: 1725968991}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: .479999989, z: -5.71000004}
+  m_LocalPosition: {x: 0, y: .479999989, z: -6.17999983}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 627921114}
@@ -1675,9 +1675,9 @@ Rigidbody:
   m_PrefabInternal: {fileID: 1220224925}
   m_GameObject: {fileID: 1774975355}
   serializedVersion: 2
-  m_Mass: 1
+  m_Mass: 3.5
   m_Drag: 0
-  m_AngularDrag: 2
+  m_AngularDrag: 1
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -1808,9 +1808,9 @@ Rigidbody:
   m_PrefabInternal: {fileID: 284501128}
   m_GameObject: {fileID: 1940360456}
   serializedVersion: 2
-  m_Mass: 1
+  m_Mass: 3.5
   m_Drag: 0
-  m_AngularDrag: 2
+  m_AngularDrag: 1
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -1869,17 +1869,17 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: ddab3fc00532b1740bcf4d18e0325a47, type: 2}
-    - target: {fileID: 440578, guid: dda3ea8527f0bd8428add517d5098b71, type: 2}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 140578, guid: dda3ea8527f0bd8428add517d5098b71, type: 2}
       propertyPath: m_Name
       value: CueBall
       objectReference: {fileID: 0}
     - target: {fileID: 440578, guid: dda3ea8527f0bd8428add517d5098b71, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 440578, guid: dda3ea8527f0bd8428add517d5098b71, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -5.71000004
+      value: -6.17999983
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: dda3ea8527f0bd8428add517d5098b71, type: 2}
@@ -1957,9 +1957,9 @@ Rigidbody:
   m_PrefabInternal: {fileID: 1984533176}
   m_GameObject: {fileID: 2121187387}
   serializedVersion: 2
-  m_Mass: 1
+  m_Mass: 3.5
   m_Drag: 0
-  m_AngularDrag: 2
+  m_AngularDrag: 1
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0

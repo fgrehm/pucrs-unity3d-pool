@@ -14,10 +14,8 @@ public class CurrentPlayerController : MonoBehaviour {
 	}
 
 	void Strike() {
-		float z = 0.0f, x = 0.0f;
-
-		x = Input.GetAxis("Horizontal");
-		z = Input.GetAxis("Vertical");
+		float x = Input.GetAxis("Horizontal");
+		float z = Input.GetAxis("Vertical");
 	
 		Vector3 force = new Vector3(x * multiplier, 0.0f, z * multiplier);
 		cueBall.rigidbody.AddForce(force);
