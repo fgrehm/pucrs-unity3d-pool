@@ -7,7 +7,7 @@ public class CurrentPlayerController : MonoBehaviour {
 
 	void Update () {
 		if (Input.GetButton("Fire1") && cueBall.rigidbody.IsSleeping()) {
-			Strike ();
+			Strike();
 		}
 	}
 
@@ -15,7 +15,11 @@ public class CurrentPlayerController : MonoBehaviour {
 		float x = Input.GetAxis("Horizontal");
 		float z = Input.GetAxis("Vertical");
 	
-		Vector3 force = new Vector3(x * multiplier, 0.0f, z * multiplier);
+		Debug.Log("x=" + x + " z="+z);
+
+		Vector3 force = new Vector3(x, 0.0f, z) * multiplier;
 		cueBall.rigidbody.AddForce(force, ForceMode.Acceleration);
+
+		Input.ResetInputAxes();
 	}
 }
