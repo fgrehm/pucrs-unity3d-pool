@@ -143,7 +143,7 @@ Camera:
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
-  m_HDR: 1
+  m_HDR: 0
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: .0219999999
@@ -566,7 +566,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cueBall: {fileID: 1725968991}
-  multiplier: 50
+  multiplier: 5000
 --- !u!1 &898413642
 GameObject:
   m_ObjectHideFlags: 0
