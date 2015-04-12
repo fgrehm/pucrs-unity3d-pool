@@ -19,7 +19,5 @@ public class CurrentPlayerController : MonoBehaviour {
 
 		Vector3 force = new Vector3(x, 0.0f, z) * multiplier;
 		cueBall.rigidbody.AddForce(force, ForceMode.Acceleration);
-
-		Input.ResetInputAxes();
 	}
 }
