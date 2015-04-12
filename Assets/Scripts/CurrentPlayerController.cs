@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class CurrentPlayerController : MonoBehaviour {
-	public GameObject whiteBall;
+	public GameObject cueBall;
 	public int multiplier;
 
 	void Update () {
@@ -18,6 +18,6 @@ public class CurrentPlayerController : MonoBehaviour {
 			x = -1;
 		}
 		Vector3 force = new Vector3(x * multiplier, 0.0f, z * multiplier);
-		whiteBall.rigidbody.AddForce(force, ForceMode.Impulse);
+		cueBall.rigidbody.AddForce(force, ForceMode.Impulse);
 	}
 }
