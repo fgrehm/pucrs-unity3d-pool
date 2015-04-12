@@ -3,6 +3,7 @@ using System.Collections;
 
 public class CurrentPlayerController : MonoBehaviour {
 	public GameObject whiteBall;
+	public int multiplier;
 
 	void Update () {
 		float z = 0.0f, x = 0.0f;
@@ -16,7 +17,6 @@ public class CurrentPlayerController : MonoBehaviour {
 		} else if (Input.GetKeyUp(KeyCode.LeftArrow)) {
 			x = -1;
 		}
-		int multiplier = 20;
 		Vector3 force = new Vector3(x * multiplier, 0.0f, z * multiplier);
 		whiteBall.rigidbody.AddForce(force, ForceMode.Impulse);
 	}
