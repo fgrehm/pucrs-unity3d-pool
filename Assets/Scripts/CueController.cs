@@ -8,25 +8,24 @@ public class CueController : MonoBehaviour {
 	private Vector3 force;
 	private bool striking = false;
 	private Vector3 positionOffset;
+	private Quaternion originalRotation;
 
 	void Start() {
 		positionOffset = transform.position - cueBall.transform.position;
+		originalRotation = transform.rotation;
 		force = Vector3.down * velocity;
-		cueBall.rigidbody.sleepVelocity = 0f;
-		cueBall.rigidbody.sleepAngularVelocity = 0f;
 	}
 
 	void FixedUpdate() {
-//		Debug.Log(Time.frameCount + " sleeping " + cueBall.rigidbody.IsSleeping());
-//		Debug.Log(Time.frameCount + " Striking " + striking);
-//		Debug.Log(Time.frameCount + " velocit " + cueBall.rigidbody.velocity);
-//		Debug.Log(Time.frameCount + " ang velo " + cueBall.rigidbody.angularVelocity);
-
 		if (striking) {
 			transform.Translate(force * Time.deltaTime);
 		} else if (cueBall.rigidbody.IsSleeping()) {
+			transform.rotation = originalRotation;
 			transform.position = cueBall.transform.position + positionOffset;
 			transform.Translate(Vector3.up * velocity * 1.5f);
+			transform.RotateAround(cueBall.transform.position, Vector3.up, Time.frameCount % 360);
+			//camera.transform.RotateAround(cueBall.transform.position, Vector3.up, Time.frameCount % 360);
+
 			striking = true;
 			this.renderer.enabled = true;
 			this.collider.enabled = true;
