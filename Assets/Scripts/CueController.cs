@@ -30,7 +30,7 @@ public class CueController : MonoBehaviour {
 			mainCamera.transform.RotateAround(cueBall.transform.position, Vector3.down, x * 75 * Time.deltaTime);
 
 			float y = Input.GetAxis("Vertical");
-			transform.RotateAround(cueBall.transform.position, transform.right, y * 75 * Time.deltaTime);
+			transform.RotateAround(cueBall.transform.position, transform.right	, y * 75 * Time.deltaTime);
 		}
 	}
 

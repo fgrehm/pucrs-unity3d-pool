@@ -14,6 +14,11 @@ public class CurrentPlayerController : MonoBehaviour {
 
 	private State currentState = State.WaitingForStrike;
 
+	void Start() {
+		cueBall.rigidbody.sleepVelocity = 0.2f;
+		cueBall.rigidbody.sleepAngularVelocity = 0.2f;
+	}
+
 	void Update() {
 		if (currentState == State.WaitingForStrike) {
 			if (Input.GetButton("Fire1")) {
