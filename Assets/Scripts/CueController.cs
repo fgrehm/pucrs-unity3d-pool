@@ -19,16 +19,6 @@ public class CueController : MonoBehaviour {
 	void FixedUpdate() {
 		if (striking) {
 			transform.Translate(force * Time.deltaTime);
-		} else if (cueBall.rigidbody.IsSleeping()) {
-			transform.rotation = originalRotation;
-			transform.position = cueBall.transform.position + positionOffset;
-			transform.Translate(Vector3.up * velocity * 1.5f);
-			transform.RotateAround(cueBall.transform.position, Vector3.up, Time.frameCount % 360);
-			//camera.transform.RotateAround(cueBall.transform.position, Vector3.up, Time.frameCount % 360);
-
-			striking = true;
-			this.renderer.enabled = true;
-			this.collider.enabled = true;
 		}
 	}
 
@@ -41,5 +31,18 @@ public class CueController : MonoBehaviour {
 		cueBall.rigidbody.AddForceAtPosition(collision.contacts[0].normal * -1500, collision.contacts[0].point);
 		this.renderer.enabled = false;
 		this.collider.enabled = false;
+	}
+
+	void Strike() {
+		striking = true;
+	}
+
+	void Reset() {
+		transform.rotation = originalRotation;
+		transform.position = cueBall.transform.position + positionOffset;
+		transform.RotateAround(cueBall.transform.position, Vector3.up, Time.frameCount % 360);
+
+		this.renderer.enabled = true;
+		this.collider.enabled = true;
 	}
 }

@@ -1478,7 +1478,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cueBall: {fileID: 1725968991}
-  velocity: 5
+  velocity: 20
 --- !u!1 &1647430446
 GameObject:
   m_ObjectHideFlags: 0
