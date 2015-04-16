@@ -9,7 +9,8 @@ public class MainCameraController : MonoBehaviour {
 		offset = transform.position - cueBall.transform.position;
 	}
 
-	void LateUpdate () {
+	void Reset() {
 		transform.position = cueBall.transform.position + offset;
+		transform.LookAt(cueBall.transform.position);
 	}
 }

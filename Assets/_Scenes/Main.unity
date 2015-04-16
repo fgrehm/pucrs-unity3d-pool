@@ -568,6 +568,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cueBall: {fileID: 1725968991}
   cue: {fileID: 1532116347}
+  mainCamera: {fileID: 3506578}
 --- !u!1 &898413642
 GameObject:
   m_ObjectHideFlags: 0
@@ -1478,6 +1479,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cueBall: {fileID: 1725968991}
+  mainCamera: {fileID: 3506578}
   velocity: 20
 --- !u!1 &1647430446
 GameObject:
