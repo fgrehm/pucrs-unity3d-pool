@@ -30,7 +30,7 @@ to `Assets -> Reimport all` if you get a compilation errors.
 - [ ] Handle white ball on pocket
 - [ ] 2 players
 - [ ] Count score per player
-- [ ] Textures with ball numbers
+- [x] Textures with ball numbers
 - [ ] Ambient (ex: a bar, 2 lights at the top...)
 - [ ] Sound of balls colliding
 - [ ] Increase size of table (?)
@@ -38,3 +38,8 @@ to `Assets -> Reimport all` if you get a compilation errors.
 - [ ] Document basic architecture / interaction between game objects
 - [ ] Document how to build
 - [ ] Tweak bounciness and friction
+
+## Credits
+
+- Table cloth texture from http://opengameart.org/content/pool-table-3d-model
+- Balls textures from http://opengameart.org/content/billiard-balls
