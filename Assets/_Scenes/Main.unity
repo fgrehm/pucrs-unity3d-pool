@@ -650,6 +650,62 @@ Transform:
   - {fileID: 1915971127}
   m_Father: {fileID: 0}
   m_RootOrder: 2
+--- !u!1 &486836181
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 486836186}
+  - 33: {fileID: 486836185}
+  - 23: {fileID: 486836182}
+  m_Layer: 0
+  m_Name: CueTip
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!23 &486836182
+Renderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 486836181}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 2100000, guid: 7ec2fed6fcd7cea4e809485b1c0bf597, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+--- !u!33 &486836185
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 486836181}
+  m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &486836186
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 486836181}
+  m_LocalRotation: {x: 2.9781728e-07, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -1.01100004, z: 0}
+  m_LocalScale: {x: 1, y: .0276288111, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1532116348}
+  m_RootOrder: 0
 --- !u!1 &590928469
 GameObject:
   m_ObjectHideFlags: 0
@@ -1924,7 +1980,8 @@ Transform:
   m_LocalRotation: {x: -.629320443, y: 0, z: 0, w: .777145982}
   m_LocalPosition: {x: -0, y: 1.86000001, z: -11.1000004}
   m_LocalScale: {x: .150000006, y: 3.32999992, z: .150000006}
-  m_Children: []
+  m_Children:
+  - {fileID: 486836186}
   m_Father: {fileID: 627921114}
   m_RootOrder: 2
 --- !u!23 &1532116349
@@ -1939,7 +1996,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 137f8b996fe395b40b4ff329f40c9ff5, type: 2}
+  - {fileID: 2100000, guid: 05cb2f0104765534883e78f7024ecea8, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -1957,8 +2014,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.00000012, y: .103470899, z: 1.00000024}
-  m_Center: {x: 4.96705361e-08, y: -.948261619, z: -3.86608626e-05}
+  m_Size: {x: 1.00000012, y: .0500000007, z: 1.00000024}
+  m_Center: {x: 4.96705361e-08, y: -1, z: -3.86608626e-05}
 --- !u!33 &1532116351
 MeshFilter:
   m_ObjectHideFlags: 0

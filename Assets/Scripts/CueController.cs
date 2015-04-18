@@ -43,6 +43,9 @@ public class CueController : MonoBehaviour {
 		cueBall.rigidbody.AddForceAtPosition(collision.contacts[0].normal * -2500, collision.contacts[0].point);
 		this.renderer.enabled = false;
 		this.collider.enabled = false;
+		foreach (Transform child in transform) {
+			child.gameObject.renderer.enabled = false;
+		}
 	}
 
 	void Strike() {
@@ -55,5 +58,8 @@ public class CueController : MonoBehaviour {
 
 		this.renderer.enabled = true;
 		this.collider.enabled = true;
+		foreach (Transform child in transform) {
+			child.gameObject.renderer.enabled = true;
+		}
 	}
 }
