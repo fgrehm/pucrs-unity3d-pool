@@ -37,7 +37,7 @@ to `Assets -> Reimport all` if you get a compilation errors.
 - [ ] Aux camera with top view of the table
 - [ ] Document basic architecture / interaction between game objects
 - [ ] Document how to build
-- [ ] Tweak bounciness and friction
+- [x] Tweak bounciness and friction
 
 ## Credits
 
