@@ -40,11 +40,11 @@ public class CueController : MonoBehaviour {
 			return;
 
 		striking = false;
-		cueBall.rigidbody.AddForceAtPosition(collision.contacts[0].normal * -2500, collision.contacts[0].point);
-		this.renderer.enabled = false;
-		this.collider.enabled = false;
+		cueBall.GetComponent<Rigidbody>().AddForceAtPosition(collision.contacts[0].normal * -2500, collision.contacts[0].point);
+		this.GetComponent<Renderer>().enabled = false;
+		this.GetComponent<Collider>().enabled = false;
 		foreach (Transform child in transform) {
-			child.gameObject.renderer.enabled = false;
+			child.gameObject.GetComponent<Renderer>().enabled = false;
 		}
 	}
 
@@ -56,10 +56,10 @@ public class CueController : MonoBehaviour {
 		transform.rotation = originalRotation;
 		transform.position = cueBall.transform.position + positionOffset;
 
-		this.renderer.enabled = true;
-		this.collider.enabled = true;
+		this.GetComponent<Renderer>().enabled = true;
+		this.GetComponent<Collider>().enabled = true;
 		foreach (Transform child in transform) {
-			child.gameObject.renderer.enabled = true;
+			child.gameObject.GetComponent<Renderer>().enabled = true;
 		}
 	}
 }

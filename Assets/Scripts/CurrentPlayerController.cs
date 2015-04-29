@@ -15,8 +15,8 @@ public class CurrentPlayerController : MonoBehaviour {
 	private State currentState = State.WaitingForStrike;
 
 	void Start() {
-		cueBall.rigidbody.sleepVelocity = 0.2f;
-		cueBall.rigidbody.sleepAngularVelocity = 0.2f;
+		cueBall.GetComponent<Rigidbody>().sleepThreshold = 0.5f;
+		//cueBall.GetComponent<Rigidbody>().sleepAngularVelocity = 0.4f;
 	}
 
 	void Update() {
@@ -28,12 +28,12 @@ public class CurrentPlayerController : MonoBehaviour {
 			}
 
 		} else if (currentState == State.Striking) {
-			if (!cueBall.rigidbody.IsSleeping()) {
+			if (!cueBall.GetComponent<Rigidbody>().IsSleeping()) {
 				currentState = State.WaitingForCueBallToStop;
 			}
 
 		} else if (currentState == State.WaitingForCueBallToStop) {
-			if (cueBall.rigidbody.IsSleeping()) {
+			if (cueBall.GetComponent<Rigidbody>().IsSleeping()) {
 				currentState = State.WaitingForStrike;
 				cue.SendMessage("Reset");
 				mainCamera.SendMessage("Reset");
