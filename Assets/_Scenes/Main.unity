@@ -1327,6 +1327,10 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 648942116}
   m_Mesh: {fileID: 4300060, guid: 5bc0a05efe2b8f04c93c3f8dd685c5df, type: 3}
+--- !u!1 &773899494 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 167264, guid: 5c6bcf931f1e6fc4eaa27868a4335985, type: 2}
+  m_PrefabInternal: {fileID: 101710837}
 --- !u!4 &773899495 stripped
 Transform:
   m_PrefabParentObject: {fileID: 411970, guid: 5c6bcf931f1e6fc4eaa27868a4335985, type: 2}
@@ -2014,6 +2018,7 @@ GameObject:
   - 92: {fileID: 1221509613}
   - 124: {fileID: 1221509612}
   - 81: {fileID: 1221509611}
+  - 114: {fileID: 1221509616}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -2080,12 +2085,24 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1221509610}
-  m_LocalRotation: {x: .119215935, y: 0, z: 0, w: .992868364}
+  m_LocalRotation: {x: .213239789, y: 0, z: 0, w: .976999879}
   m_LocalPosition: {x: 0, y: 11.2299995, z: -19.1800003}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1569555766}
   m_RootOrder: 0
+--- !u!114 &1221509616
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1221509610}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 347b30bab75256340b2744c174b6093d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cueBall: {fileID: 773899494}
 --- !u!1 &1242182231
 GameObject:
   m_ObjectHideFlags: 0

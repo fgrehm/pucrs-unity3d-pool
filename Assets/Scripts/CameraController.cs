@@ -2,14 +2,15 @@
 using System.Collections;
 
 public class CameraController : MonoBehaviour {
-
-	// Use this for initialization
-	void Start () {
+	public GameObject cueBall;
+	private Vector3 offset;
 	
+	void Start () {
+		offset = transform.position - cueBall.transform.position;
 	}
 	
-	// Update is called once per frame
-	void Update () {
-	
+	void LateUpdate () {
+		transform.position = cueBall.transform.position + offset;
+		transform.LookAt(cueBall.transform);
 	}
 }
