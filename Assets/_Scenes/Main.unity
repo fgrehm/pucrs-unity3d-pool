@@ -507,6 +507,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cueBall: {fileID: 1725968991}
+  otherBalls: {fileID: 0}
   cue: {fileID: 1532116347}
   mainCamera: {fileID: 3506578}
 --- !u!1 &666844782 stripped
