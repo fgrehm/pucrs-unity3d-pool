@@ -13,7 +13,7 @@ GameObject:
   - 23: {fileID: 2349222}
   - 54: {fileID: 5458910}
   m_Layer: 0
-  m_Name: CueBall
+  m_Name: SnookerBall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
