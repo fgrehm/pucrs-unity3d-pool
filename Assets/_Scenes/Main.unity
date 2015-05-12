@@ -3205,6 +3205,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f94219709e0f2e4a8d29779d36347de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cue: {fileID: 1759227101}
+  cueBall: {fileID: 773899494}
+  redBalls: {fileID: 1326691926}
+  sleepThreshold: 1
+  strikeSpeed: 3
+  multiplier: 1500
 --- !u!1 &1589263832
 GameObject:
   m_ObjectHideFlags: 0
@@ -3351,6 +3357,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 1759227102}
   - 114: {fileID: 1759227103}
+  - 136: {fileID: 1759227104}
+  - 54: {fileID: 1759227105}
   m_Layer: 0
   m_Name: Cue
   m_TagString: Untagged
@@ -3384,6 +3392,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8948b1740d2ca114d9ea7364a4aee87c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!136 &1759227104
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1759227101}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: .100000001
+  m_Height: 1
+  m_Direction: 1
+  m_Center: {x: 0, y: 11.8000002, z: 0}
+--- !u!54 &1759227105
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1759227101}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1820930718
 GameObject:
   m_ObjectHideFlags: 0
@@ -3663,7 +3699,6 @@ GameObject:
   - 4: {fileID: 1952466369}
   - 33: {fileID: 1952466372}
   - 23: {fileID: 1952466371}
-  - 136: {fileID: 1952466370}
   m_Layer: 0
   m_Name: CueTip
   m_TagString: Untagged
@@ -3683,19 +3718,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1759227102}
   m_RootOrder: 2
---- !u!136 &1952466370
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1952466368}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: .500000179
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 5.96046448e-08, y: -1.66533454e-16, z: 1.81794167e-06}
 --- !u!23 &1952466371
 MeshRenderer:
   m_ObjectHideFlags: 0
