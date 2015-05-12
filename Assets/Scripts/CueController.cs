@@ -40,7 +40,9 @@ public class CueController : MonoBehaviour {
 			return;
 
 		striking = false;
-		cueBall.GetComponent<Rigidbody>().AddForceAtPosition(collision.contacts[0].normal * -2500, collision.contacts[0].point);
+		var strikeForce = collision.contacts[0].normal * -4500;
+		strikeForce.y *= 0;
+		cueBall.GetComponent<Rigidbody>().AddForceAtPosition(strikeForce, collision.contacts[0].point);
 		this.GetComponent<Renderer>().enabled = false;
 		this.GetComponent<Collider>().enabled = false;
 		foreach (Transform child in transform) {

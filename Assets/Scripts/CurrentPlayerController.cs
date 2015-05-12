@@ -3,6 +3,7 @@ using System.Collections;
 
 public class CurrentPlayerController : MonoBehaviour {
 	public GameObject cueBall;
+	public GameObject otherBalls;
 	public GameObject cue;
 	public Camera mainCamera;
 
@@ -15,8 +16,9 @@ public class CurrentPlayerController : MonoBehaviour {
 	private State currentState = State.WaitingForStrike;
 
 	void Start() {
-		cueBall.GetComponent<Rigidbody>().sleepThreshold = 0.5f;
-		//cueBall.GetComponent<Rigidbody>().sleepAngularVelocity = 0.4f;
+		cueBall.GetComponent<Rigidbody>().sleepThreshold = 0.6f;
+		foreach (var otherRigidBodies in otherBalls.GetComponentsInChildren<Rigidbody>())
+			otherRigidBodies.sleepThreshold = 0.6f;
 	}
 
 	void Update() {
