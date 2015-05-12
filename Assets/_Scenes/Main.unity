@@ -282,27 +282,27 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100072, guid: 5bc0a05efe2b8f04c93c3f8dd685c5df, type: 3}
       propertyPath: m_Name
-      value: Hole2
+      value: Pocket2
       objectReference: {fileID: 0}
     - target: {fileID: 100074, guid: 5bc0a05efe2b8f04c93c3f8dd685c5df, type: 3}
       propertyPath: m_Name
-      value: Hole1
+      value: Pocket1
       objectReference: {fileID: 0}
     - target: {fileID: 100082, guid: 5bc0a05efe2b8f04c93c3f8dd685c5df, type: 3}
       propertyPath: m_Name
-      value: Hole3
+      value: Pocket3
       objectReference: {fileID: 0}
     - target: {fileID: 100080, guid: 5bc0a05efe2b8f04c93c3f8dd685c5df, type: 3}
       propertyPath: m_Name
-      value: Hole4
+      value: Pocket4
       objectReference: {fileID: 0}
     - target: {fileID: 100078, guid: 5bc0a05efe2b8f04c93c3f8dd685c5df, type: 3}
       propertyPath: m_Name
-      value: Hole6
+      value: Pocket6
       objectReference: {fileID: 0}
     - target: {fileID: 100076, guid: 5bc0a05efe2b8f04c93c3f8dd685c5df, type: 3}
       propertyPath: m_Name
-      value: Hole5
+      value: Pocket5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5bc0a05efe2b8f04c93c3f8dd685c5df, type: 3}
