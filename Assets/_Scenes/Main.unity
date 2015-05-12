@@ -363,6 +363,14 @@ Prefab:
       propertyPath: m_LocalPosition.z
       value: -7
       objectReference: {fileID: 0}
+    - target: {fileID: 167264, guid: 5c6bcf931f1e6fc4eaa27868a4335985, type: 2}
+      propertyPath: m_Name
+      value: CueBall
+      objectReference: {fileID: 0}
+    - target: {fileID: 2349222, guid: 5c6bcf931f1e6fc4eaa27868a4335985, type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: f3bc998e4d12e174e9973bc75edf443f, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5c6bcf931f1e6fc4eaa27868a4335985, type: 2}
   m_IsPrefabParent: 0
