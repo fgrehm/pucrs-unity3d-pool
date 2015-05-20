@@ -146,7 +146,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
 --- !u!1001 &240431442
 Prefab:
   m_ObjectHideFlags: 0
@@ -191,6 +191,7 @@ GameObject:
   - 4: {fileID: 344705203}
   - 33: {fileID: 344705202}
   - 23: {fileID: 344705201}
+  - 114: {fileID: 344705204}
   m_Layer: 0
   m_Name: Cue
   m_TagString: Untagged
@@ -240,12 +241,23 @@ Transform:
   m_PrefabParentObject: {fileID: 400038, guid: 8f483eadb05bbec4bb01a377d1378b59, type: 3}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 344705200}
-  m_LocalRotation: {x: 3.26315188e-08, y: .665360689, z: .746522129, w: -2.90838393e-08}
+  m_LocalRotation: {x: -1.06885579e-07, y: -.656058967, z: -.754709661, w: 1.22957815e-07}
   m_LocalPosition: {x: 0, y: 4.80000019, z: -42.5}
-  m_LocalScale: {x: .5, y: .5, z: .49999997}
+  m_LocalScale: {x: .5, y: .49999997, z: .49999997}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_Father: {fileID: 525280267}
+  m_RootOrder: 2
+--- !u!114 &344705204
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 344705200}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd76444b13b0fa14cbde6737de44d931, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &368699744 stripped
 Transform:
   m_PrefabParentObject: {fileID: 491266, guid: d9c8feaa4dc0f8744a4809fb85b66fef, type: 2}
@@ -299,6 +311,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fa32227bf1e8e1458636c08a7d8bfe4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cue: {fileID: 344705200}
   cueBall: {fileID: 546145797}
   redBalls: {fileID: 1453233146}
   mainCamera: {fileID: 987905016}
@@ -316,8 +329,9 @@ Transform:
   m_Children:
   - {fileID: 546145802}
   - {fileID: 987905021}
+  - {fileID: 344705203}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
 --- !u!1 &546145797 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 180578, guid: d9c8feaa4dc0f8744a4809fb85b66fef, type: 2}
@@ -550,7 +564,7 @@ Transform:
   - {fileID: 368699744}
   - {fileID: 283452083}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
 --- !u!1001 &1606285761
 Prefab:
   m_ObjectHideFlags: 0
@@ -606,7 +620,7 @@ Transform:
   m_LocalScale: {x: .5, y: .5, z: .5}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 0
 --- !u!23 &1898568379
 MeshRenderer:
   m_ObjectHideFlags: 0
