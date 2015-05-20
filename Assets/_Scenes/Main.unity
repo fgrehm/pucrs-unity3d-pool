@@ -646,7 +646,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!108 &210613526
 Light:
   m_ObjectHideFlags: 0
@@ -3208,9 +3208,10 @@ MonoBehaviour:
   cue: {fileID: 1759227101}
   cueBall: {fileID: 773899494}
   redBalls: {fileID: 1326691926}
+  mainCamera: {fileID: 1221509610}
   sleepThreshold: 50
   strikeSpeed: 3
-  multiplier: 4500
+  multiplier: 3000
 --- !u!1 &1589263832
 GameObject:
   m_ObjectHideFlags: 0

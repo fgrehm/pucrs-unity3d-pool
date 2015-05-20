@@ -11,7 +11,7 @@ public class SnookerBallController : MonoBehaviour {
 	void FixedUpdate() {
 		var velocity = body.velocity;
 		if (velocity.y > 0) {
-			velocity.y *= 0.8f;
+			velocity.y *= 0.15f;
 			body.velocity = velocity;
 		}
 	}

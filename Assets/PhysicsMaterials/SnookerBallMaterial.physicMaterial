@@ -6,7 +6,7 @@ PhysicMaterial:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: SnookerBallMaterial
-  dynamicFriction: 9
+  dynamicFriction: 2
   staticFriction: 1
   bounciness: .5
   frictionCombine: 3
