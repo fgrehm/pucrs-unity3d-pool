@@ -10,11 +10,13 @@ public class PlayerController : MonoBehaviour {
 
 	private Vector3 strikeDirection;
 	private Vector3 cameraOffset;
+	private Quaternion cameraRotation;
 
 	// Use this for initialization
 	void Start () {
 		strikeDirection = Vector3.forward;
 		cameraOffset = cueBall.transform.position - mainCamera.transform.position;
+		cameraRotation = mainCamera.transform.rotation;
 		cueBall.GetComponent<Rigidbody>().sleepThreshold = 10f;
 		foreach (var rigidbody in redBalls.GetComponentsInChildren<Rigidbody>())
 			rigidbody.sleepThreshold = 10f;
@@ -32,6 +34,8 @@ public class PlayerController : MonoBehaviour {
 				var angle = x * 75 * Time.deltaTime;
 				strikeDirection = Quaternion.AngleAxis(angle, Vector3.up) * strikeDirection;
 				mainCamera.transform.RotateAround(cueBall.transform.position, Vector3.up, angle);
+				cameraRotation = mainCamera.transform.rotation;
+				cameraOffset = cueBall.transform.position - mainCamera.transform.position;
 			}
 		}
 	}
@@ -39,7 +43,7 @@ public class PlayerController : MonoBehaviour {
 	void LateUpdate() {
 		if (!cueBall.GetComponent<Rigidbody>().IsSleeping()) {
 			mainCamera.transform.position = cueBall.transform.position - cameraOffset;
-			mainCamera.transform.LookAt(cueBall.transform.position);
+			mainCamera.transform.rotation = cameraRotation;
 		}
 	}
 }
