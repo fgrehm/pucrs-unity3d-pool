@@ -15,9 +15,17 @@ public class CueController : MonoBehaviour {
 	}
 
 	private StrikeMessage strike;
+	private Vector3 cueBallOffset;
 
 	void Start () {
 	
+	}
+
+	public void Reset(GameObject cueBall) {
+		transform.position = cueBall.transform.position + cueBallOffset;
+		GetComponent<Collider>().enabled = true;
+		foreach (var renderer in GetComponentsInChildren<Renderer>())
+			renderer.enabled = true;
 	}
 
 	void FixedUpdate () {
@@ -32,13 +40,13 @@ public class CueController : MonoBehaviour {
 		var lastStrike = strike;
 		strike = null;
 		lastStrike.CueBall.GetComponent<Rigidbody>().AddForceAtPosition(collision.contacts[0].normal * lastStrike.ForceMultiplier, collision.contacts[0].point);
-		//GetComponent<Renderer>().enabled = false;
 		GetComponent<Collider>().enabled = false;
 		foreach (var renderer in GetComponentsInChildren<Renderer>())
 			renderer.enabled = false;
 	}
 
 	void Strike(StrikeMessage strike) {
+		cueBallOffset = transform.position - strike.CueBall.transform.position;
 		this.strike = strike;
 	}
 }

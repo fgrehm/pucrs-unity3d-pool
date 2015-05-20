@@ -657,7 +657,7 @@ Light:
   serializedVersion: 6
   m_Type: 1
   m_Color: {r: 1, g: .956862748, b: .839215696, a: 1}
-  m_Intensity: .800000012
+  m_Intensity: .159999996
   m_Range: 10
   m_SpotAngle: 30
   m_CookieSize: 10
@@ -2553,7 +2553,7 @@ MeshCollider:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1268548052}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: b4077c7b3746f6545803633b231d1831, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -2664,7 +2664,7 @@ Light:
   serializedVersion: 6
   m_Type: 1
   m_Color: {r: 1, g: .956862748, b: .839215696, a: 1}
-  m_Intensity: .800000012
+  m_Intensity: .860000014
   m_Range: 10
   m_SpotAngle: 30
   m_CookieSize: 10
@@ -3208,9 +3208,9 @@ MonoBehaviour:
   cue: {fileID: 1759227101}
   cueBall: {fileID: 773899494}
   redBalls: {fileID: 1326691926}
-  sleepThreshold: 1
+  sleepThreshold: 50
   strikeSpeed: 3
-  multiplier: 1500
+  multiplier: 4500
 --- !u!1 &1589263832
 GameObject:
   m_ObjectHideFlags: 0

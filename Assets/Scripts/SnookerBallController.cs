@@ -2,14 +2,17 @@
 using System.Collections;
 
 public class SnookerBallController : MonoBehaviour {
+	private Rigidbody body;
 
-	// Use this for initialization
-	void Start () {
-	
+	void Start() {
+		body = GetComponent<Rigidbody>();
 	}
-	
-	// Update is called once per frame
-	void Update () {
-	
+
+	void FixedUpdate() {
+		var velocity = body.velocity;
+		if (velocity.y > 0) {
+			velocity.y *= 0.8f;
+			body.velocity = velocity;
+		}
 	}
 }
