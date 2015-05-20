@@ -1,0 +1,174 @@
+fileFormatVersion: 2
+guid: 8f483eadb05bbec4bb01a377d1378b59
+timeCreated: 1432138401
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: bola-01 ww
+    100004: bola-02 ww
+    100006: bola-03 ww
+    100008: bola-04 ww
+    100010: bola-05 ww
+    100012: bola-06 ww
+    100014: bola-07 ww
+    100016: bola-08 ww
+    100018: bola-09 ww
+    100020: bola-10 ww
+    100022: bola-11 ww
+    100024: bola-12 ww
+    100026: bola-13 ww
+    100028: bola-14 ww
+    100030: bola-15 ww
+    100032: bola-branc
+    100034: Box07 www.
+    100036: mesa bilha
+    100038: taco bilh0
+    100040: taco bilh1
+    100042: taco bilh2
+    100044: taco bilha
+    400000: //RootNode
+    400002: bola-01 ww
+    400004: bola-02 ww
+    400006: bola-03 ww
+    400008: bola-04 ww
+    400010: bola-05 ww
+    400012: bola-06 ww
+    400014: bola-07 ww
+    400016: bola-08 ww
+    400018: bola-09 ww
+    400020: bola-10 ww
+    400022: bola-11 ww
+    400024: bola-12 ww
+    400026: bola-13 ww
+    400028: bola-14 ww
+    400030: bola-15 ww
+    400032: bola-branc
+    400034: Box07 www.
+    400036: mesa bilha
+    400038: taco bilh0
+    400040: taco bilh1
+    400042: taco bilh2
+    400044: taco bilha
+    2300000: bola-01 ww
+    2300002: bola-02 ww
+    2300004: bola-03 ww
+    2300006: bola-04 ww
+    2300008: bola-05 ww
+    2300010: bola-06 ww
+    2300012: bola-07 ww
+    2300014: bola-08 ww
+    2300016: bola-09 ww
+    2300018: bola-10 ww
+    2300020: bola-11 ww
+    2300022: bola-12 ww
+    2300024: bola-13 ww
+    2300026: bola-14 ww
+    2300028: bola-15 ww
+    2300030: bola-branc
+    2300032: Box07 www.
+    2300034: mesa bilha
+    2300036: taco bilh0
+    2300038: taco bilh1
+    2300040: taco bilh2
+    2300042: taco bilha
+    3300000: bola-01 ww
+    3300002: bola-02 ww
+    3300004: bola-03 ww
+    3300006: bola-04 ww
+    3300008: bola-05 ww
+    3300010: bola-06 ww
+    3300012: bola-07 ww
+    3300014: bola-08 ww
+    3300016: bola-09 ww
+    3300018: bola-10 ww
+    3300020: bola-11 ww
+    3300022: bola-12 ww
+    3300024: bola-13 ww
+    3300026: bola-14 ww
+    3300028: bola-15 ww
+    3300030: bola-branc
+    3300032: Box07 www.
+    3300034: mesa bilha
+    3300036: taco bilh0
+    3300038: taco bilh1
+    3300040: taco bilh2
+    3300042: taco bilha
+    4300000: mesa bilha
+    4300002: Box07 www.
+    4300004: bola-01 ww
+    4300006: bola-02 ww
+    4300008: bola-03 ww
+    4300010: bola-04 ww
+    4300012: bola-05 ww
+    4300014: bola-06 ww
+    4300016: bola-07 ww
+    4300018: bola-08 ww
+    4300020: bola-09 ww
+    4300022: bola-10 ww
+    4300024: bola-branc
+    4300026: bola-11 ww
+    4300028: bola-12 ww
+    4300030: bola-13 ww
+    4300032: bola-14 ww
+    4300034: bola-15 ww
+    4300036: taco bilha
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
