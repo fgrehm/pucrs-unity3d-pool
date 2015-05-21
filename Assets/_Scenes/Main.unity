@@ -258,6 +258,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd76444b13b0fa14cbde6737de44d931, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cueBall: {fileID: 546145797}
 --- !u!4 &368699744 stripped
 Transform:
   m_PrefabParentObject: {fileID: 491266, guid: d9c8feaa4dc0f8744a4809fb85b66fef, type: 2}
