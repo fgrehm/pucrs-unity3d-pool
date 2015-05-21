@@ -37,6 +37,9 @@ public class PlayerController : MonoBehaviour {
 		if (Input.GetButton("Fire1") && body.IsSleeping()) {
 			body.AddForce(strikeDirection * maxForce);
 			cue.GetComponent<Renderer>().enabled = false;
+		} else if (Input.GetButton("Fire2") && body.IsSleeping()) {
+			body.AddForce(strikeDirection * minForce);
+			cue.GetComponent<Renderer>().enabled = false;
 		} else if (body.IsSleeping()) {
 			cue.GetComponent<Renderer>().enabled = true;
 			var x = Input.GetAxis("Horizontal");
