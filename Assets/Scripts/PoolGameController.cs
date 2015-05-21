@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class PlayerController : MonoBehaviour {
+public class PoolGameController : MonoBehaviour {
 	public GameObject cue;
 	public GameObject cueBall;
 	public GameObject redBalls;
