@@ -7,7 +7,7 @@ PhysicMaterial:
   m_PrefabInternal: {fileID: 0}
   m_Name: SnookerBallPhysics
   dynamicFriction: .600000024
-  staticFriction: .600000024
+  staticFriction: .100000001
   bounciness: .5
   frictionCombine: 3
   bounceCombine: 0
