@@ -274,6 +274,7 @@ GameObject:
   - 33: {fileID: 434452146}
   - 64: {fileID: 434452145}
   - 23: {fileID: 434452144}
+  - 114: {fileID: 434452148}
   m_Layer: 0
   m_Name: PocketsCollider
   m_TagString: Untagged
@@ -336,6 +337,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1898568378}
   m_RootOrder: 0
+--- !u!114 &434452148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 434452143}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23dd498b93e94894494a71642980d603, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  redBalls: {fileID: 1453233146}
+  cueBall: {fileID: 546145797}
 --- !u!1001 &435633097
 Prefab:
   m_ObjectHideFlags: 0
