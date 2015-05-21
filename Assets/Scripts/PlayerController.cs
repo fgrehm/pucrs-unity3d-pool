@@ -52,7 +52,7 @@ public class PlayerController : MonoBehaviour {
 				cameraRotation = mainCamera.transform.rotation;
 				cameraOffset = cueBall.transform.position - mainCamera.transform.position;
 			}
-			Debug.DrawLine(cueBall.transform.position, cueBall.transform.position+strikeDirection*4);
+			Debug.DrawLine(cueBall.transform.position, cueBall.transform.position+strikeDirection*10);
 		}
 	}
 

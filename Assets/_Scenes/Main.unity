@@ -392,7 +392,7 @@ MonoBehaviour:
   cueBall: {fileID: 546145797}
   redBalls: {fileID: 1453233146}
   mainCamera: {fileID: 987905016}
-  maxForce: 1500
+  maxForce: 1700
   minForce: 500
 --- !u!4 &525280267
 Transform:
@@ -738,8 +738,8 @@ MeshRenderer:
   - {fileID: 2100000, guid: 2e7f301c1d8927240b91599cd3d0e9cd, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 0
-  m_ReflectionProbeUsage: 0
+  m_UseLightProbes: 1
+  m_ReflectionProbeUsage: 3
   m_ProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
   m_PreserveUVs: 0
