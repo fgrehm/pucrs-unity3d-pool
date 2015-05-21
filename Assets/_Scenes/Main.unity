@@ -392,8 +392,8 @@ MonoBehaviour:
   cueBall: {fileID: 546145797}
   redBalls: {fileID: 1453233146}
   mainCamera: {fileID: 987905016}
-  maxForce: 1700
-  minForce: 500
+  maxForce: 3500
+  minForce: 250
 --- !u!4 &525280267
 Transform:
   m_ObjectHideFlags: 0

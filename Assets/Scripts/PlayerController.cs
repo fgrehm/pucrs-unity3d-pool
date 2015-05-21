@@ -25,9 +25,9 @@ public class PlayerController : MonoBehaviour {
 		cueOffset = cueBall.transform.position - cue.transform.position;
 		cueRotation = cue.transform.rotation;
 
-		cueBall.GetComponent<Rigidbody>().sleepThreshold = 10f;
+		cueBall.GetComponent<Rigidbody>().sleepThreshold = 0.1f;
 		foreach (var rigidbody in redBalls.GetComponentsInChildren<Rigidbody>())
-			rigidbody.sleepThreshold = 3f;
+			rigidbody.sleepThreshold = 0.1f;
 	}
 	
 	// Update is called once per frame
