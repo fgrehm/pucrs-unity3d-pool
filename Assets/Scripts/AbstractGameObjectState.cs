@@ -6,7 +6,7 @@ public abstract class AbstractGameObjectState : IGameObjectState {
 		this.parent = parent;
 	}
 
-	public void Update() { }
-	public void FixedUpdate() { }
-	public void LateUpdate() { }
+	public virtual void Update() { }
+	public virtual void FixedUpdate() { }
+	public virtual void LateUpdate() { }
 }
