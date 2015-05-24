@@ -29,11 +29,12 @@ namespace GameStates {
 		}
 
 		public override void FixedUpdate() {
-			if (!cueBall.GetComponent<Rigidbody>().IsSleeping())
+			var cueBallBody = cueBall.GetComponent<Rigidbody>();
+			if (!(cueBallBody.IsSleeping() || cueBallBody.velocity == Vector3.zero))
 				return;
 
 			foreach (var rigidbody in redBalls.GetComponentsInChildren<Rigidbody>()) {
-				if (!rigidbody.IsSleeping())
+				if (!(rigidbody.IsSleeping() || rigidbody.velocity == Vector3.zero))
 					return;
 			}
 

@@ -3,7 +3,7 @@ using System.Collections;
 
 public class SnookerBallController : MonoBehaviour {
 	void Start() {
-		GetComponent<Rigidbody>().sleepThreshold = 0.1f;
+		GetComponent<Rigidbody>().sleepThreshold = 0.15f;
 	}
 
 	void FixedUpdate () {
