@@ -21,18 +21,6 @@ public class PoolGameController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update() {
-		var body = cueBall.GetComponent<Rigidbody>();
-
-		if (Input.GetButton("Fire1") && body.IsSleeping()) {
-			body.AddForce(strikeDirection * maxForce);
-			cue.GetComponent<Renderer>().enabled = false;
-			currentState = new GameStates.WaitingForNextTurnState(this);
-		} else if (Input.GetButton("Fire2") && body.IsSleeping()) {
-			body.AddForce(strikeDirection * minForce);
-			cue.GetComponent<Renderer>().enabled = false;
-			currentState = new GameStates.WaitingForNextTurnState(this);
-		}
-
 		currentState.Update();
 	}
 

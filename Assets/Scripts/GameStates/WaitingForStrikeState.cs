@@ -27,6 +27,17 @@ namespace GameStates {
 				cue.transform.RotateAround(cueBall.transform.position, Vector3.up, angle);
 			}
 			Debug.DrawLine(cueBall.transform.position, cueBall.transform.position + gameController.strikeDirection * 10);
+
+			var body = cueBall.GetComponent<Rigidbody>();
+			if (Input.GetButton("Fire1")) {
+				body.AddForce(gameController.strikeDirection * gameController.maxForce);
+				cue.GetComponent<Renderer>().enabled = false;
+				gameController.currentState = new GameStates.WaitingForNextTurnState(gameController);
+			} else if (Input.GetButton("Fire2")) {
+				body.AddForce(gameController.strikeDirection * gameController.minForce);
+				cue.GetComponent<Renderer>().enabled = false;
+				gameController.currentState = new GameStates.WaitingForNextTurnState(gameController);
+			}
 		}
 	}
 }
