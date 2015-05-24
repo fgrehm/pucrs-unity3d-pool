@@ -409,6 +409,7 @@ MonoBehaviour:
   mainCamera: {fileID: 987905016}
   maxForce: 6000
   minForce: 250
+  strikeDirection: {x: 0, y: 0, z: 0}
 --- !u!4 &525280267
 Transform:
   m_ObjectHideFlags: 0

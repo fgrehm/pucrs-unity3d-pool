@@ -2,6 +2,10 @@
 using System.Collections;
 
 public class SnookerBallController : MonoBehaviour {
+	void Start() {
+		GetComponent<Rigidbody>().sleepThreshold = 0.1f;
+	}
+
 	void FixedUpdate () {
 		var rigidbody = GetComponent<Rigidbody>();
 		if (rigidbody.velocity.y > 0) {
