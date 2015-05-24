@@ -191,7 +191,6 @@ GameObject:
   - 4: {fileID: 344705203}
   - 33: {fileID: 344705202}
   - 23: {fileID: 344705201}
-  - 114: {fileID: 344705204}
   m_Layer: 0
   m_Name: Cue
   m_TagString: Untagged
@@ -247,18 +246,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
---- !u!114 &344705204
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 344705200}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd76444b13b0fa14cbde6737de44d931, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cueBall: {fileID: 546145797}
 --- !u!4 &368699744 stripped
 Transform:
   m_PrefabParentObject: {fileID: 491266, guid: d9c8feaa4dc0f8744a4809fb85b66fef, type: 2}
