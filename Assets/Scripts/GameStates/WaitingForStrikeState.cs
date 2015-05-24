@@ -20,6 +20,7 @@ namespace GameStates {
 
 		public override void Update() {
 			var x = Input.GetAxis("Horizontal");
+			
 			if (x != 0) {
 				var angle = x * 75 * Time.deltaTime;
 				gameController.strikeDirection = Quaternion.AngleAxis(angle, Vector3.up) * gameController.strikeDirection;

@@ -8,7 +8,7 @@ namespace GameStates {
 		private GameObject cue;
 		private GameObject cueBall;
 
-		private float cueDirection = 1;
+		private float cueDirection = -1;
 		private float speed = 7;
 
 		public StrikingState(MonoBehaviour parent) : base(parent) { 
@@ -19,17 +19,16 @@ namespace GameStates {
 
 		public override void Update() {
 			if (Input.GetButtonUp("Fire1")) {
-				cueBall.GetComponent<Rigidbody>().AddForce(gameController.strikeDirection * gameController.maxForce);
-				cue.GetComponent<Renderer>().enabled = false;
-				gameController.currentState = new GameStates.WaitingForNextTurnState(gameController);
+				gameController.currentState = new GameStates.StrikeState(gameController);
 			}
 		}
 
 		public override void FixedUpdate () {
 			var distance = Vector3.Distance(cue.transform.position, cueBall.transform.position);
-			if (distance < 27.5 || distance > 36)
+			if (distance < PoolGameController.MIN_DISTANCE || distance > PoolGameController.MAX_DISTANCE)
 				cueDirection *= -1;
 			cue.transform.Translate(Vector3.down * speed * cueDirection * Time.fixedDeltaTime);
+			Debug.Log(distance);
 		}
 	}
 }
