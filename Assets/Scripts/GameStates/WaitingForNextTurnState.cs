@@ -38,6 +38,8 @@ namespace GameStates {
 					return;
 			}
 
+			gameController.NextPlayer();
+
 			// If all balls are sleeping, time for the next turn
 			// This is kinda hacky but gets the job done
 			gameController.currentState = new WaitingForStrikeState(gameController);

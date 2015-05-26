@@ -15,14 +15,27 @@ public class PoolGameController : MonoBehaviour {
 	
 	public IGameObjectState currentState;
 
-	// Use this for initialization
+	public Player CurrentPlayer;
+	public Player OtherPlayer;
+
+	private bool currentPlayerContinuesToPlay = false;
+
+	// This is kinda hacky but works
+	static public PoolGameController GameInstance {
+		get;
+		private set;
+	}
+
 	void Start() {
 		strikeDirection = Vector3.forward;
+		CurrentPlayer = new Player("Player 1");
+		OtherPlayer = new Player("Player 2");
+
+		GameInstance = this;
 
 		currentState = new GameStates.WaitingForStrikeState(this);
 	}
 	
-	// Update is called once per frame
 	void Update() {
 		currentState.Update();
 	}
@@ -33,5 +46,23 @@ public class PoolGameController : MonoBehaviour {
 
 	void LateUpdate() {
 		currentState.LateUpdate();
+	}
+
+	public void BallPocketed(int ballNumber) {
+		currentPlayerContinuesToPlay = true;
+		CurrentPlayer.Collect(ballNumber);
+	}
+
+	public void NextPlayer() {
+		if (currentPlayerContinuesToPlay) {
+			currentPlayerContinuesToPlay = false;
+			Debug.Log(CurrentPlayer.Name + " continues to play");
+			return;
+		}
+
+		Debug.Log(OtherPlayer.Name + " will play");
+		var aux = CurrentPlayer;
+		CurrentPlayer = OtherPlayer;
+		OtherPlayer = aux;
 	}
 }
