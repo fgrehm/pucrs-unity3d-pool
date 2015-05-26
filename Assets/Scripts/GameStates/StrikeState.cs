@@ -23,7 +23,6 @@ namespace GameStates {
 
 		public override void FixedUpdate () {
 			var distance = Vector3.Distance(cue.transform.position, cueBall.transform.position);
-			Debug.Log(distance);
 			if (distance < PoolGameController.MIN_DISTANCE) {
 				cueBall.GetComponent<Rigidbody>().AddForce(gameController.strikeDirection * force);
 				cue.GetComponent<Renderer>().enabled = false;

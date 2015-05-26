@@ -32,7 +32,6 @@ public class PoolGameController : MonoBehaviour {
 	}
 
 	void LateUpdate() {
-		Debug.Log(currentState);
 		currentState.LateUpdate();
 	}
 }
