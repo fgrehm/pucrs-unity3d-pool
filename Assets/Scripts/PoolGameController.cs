@@ -6,6 +6,9 @@ public class PoolGameController : MonoBehaviour {
 	public GameObject cueBall;
 	public GameObject redBalls;
 	public GameObject mainCamera;
+	public GameObject scoreBar;
+	public GameObject winnerMessage;
+
 	public float maxForce;
 	public float minForce;
 	public Vector3 strikeDirection;
@@ -32,6 +35,7 @@ public class PoolGameController : MonoBehaviour {
 		OtherPlayer = new Player("Player 2");
 
 		GameInstance = this;
+		winnerMessage.GetComponent<Canvas>().enabled = false;
 
 		currentState = new GameStates.WaitingForStrikeState(this);
 	}
