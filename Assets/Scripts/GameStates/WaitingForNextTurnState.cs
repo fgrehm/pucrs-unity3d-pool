@@ -29,20 +29,24 @@ namespace GameStates {
 		}
 
 		public override void FixedUpdate() {
-			var cueBallBody = cueBall.GetComponent<Rigidbody>();
-			if (!(cueBallBody.IsSleeping() || cueBallBody.velocity == Vector3.zero))
-				return;
-
-			foreach (var rigidbody in redBalls.GetComponentsInChildren<Rigidbody>()) {
-				if (!(rigidbody.IsSleeping() || rigidbody.velocity == Vector3.zero))
+			Debug.Log(redBalls.GetComponentsInChildren<Transform>().Length);
+			if (redBalls.GetComponentsInChildren<Transform>().Length == 1) {
+				gameController.EndMatch();
+			} else {
+				var cueBallBody = cueBall.GetComponent<Rigidbody>();
+				if (!(cueBallBody.IsSleeping() || cueBallBody.velocity == Vector3.zero))
 					return;
+				
+				foreach (var rigidbody in redBalls.GetComponentsInChildren<Rigidbody>()) {
+					if (!(rigidbody.IsSleeping() || rigidbody.velocity == Vector3.zero))
+						return;
+				}
+
+				gameController.NextPlayer();
+				// If all balls are sleeping, time for the next turn
+				// This is kinda hacky but gets the job done
+				gameController.currentState = new WaitingForStrikeState(gameController);
 			}
-
-			gameController.NextPlayer();
-
-			// If all balls are sleeping, time for the next turn
-			// This is kinda hacky but gets the job done
-			gameController.currentState = new WaitingForStrikeState(gameController);
 		}
 
 		public override void LateUpdate() {

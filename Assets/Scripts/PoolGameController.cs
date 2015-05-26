@@ -31,8 +31,8 @@ public class PoolGameController : MonoBehaviour {
 
 	void Start() {
 		strikeDirection = Vector3.forward;
-		CurrentPlayer = new Player("Player 1");
-		OtherPlayer = new Player("Player 2");
+		CurrentPlayer = new Player("John");
+		OtherPlayer = new Player("Doe");
 
 		GameInstance = this;
 		winnerMessage.GetComponent<Canvas>().enabled = false;
@@ -68,5 +68,24 @@ public class PoolGameController : MonoBehaviour {
 		var aux = CurrentPlayer;
 		CurrentPlayer = OtherPlayer;
 		OtherPlayer = aux;
+	}
+
+	public void EndMatch() {
+		Player winner = null;
+		if (CurrentPlayer.Points > OtherPlayer.Points)
+			winner = CurrentPlayer; 
+		else if (CurrentPlayer.Points < OtherPlayer.Points)
+			winner = OtherPlayer;
+
+		var msg = "Game Over\n";
+
+		if (winner != null)
+			msg += string.Format("The winner is '{0}'", winner.Name);
+		else
+			msg += "It was a draw!";
+
+		var text = winnerMessage.GetComponentInChildren<UnityEngine.UI.Text>();
+		text.text = msg;
+		winnerMessage.GetComponent<Canvas>().enabled = true;
 	}
 }
