@@ -142,7 +142,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 206402521}
   m_LocalRotation: {x: .408217937, y: -.234569728, z: .109381661, w: .875426114}
-  m_LocalPosition: {x: 0, y: 3, z: 0}
+  m_LocalPosition: {x: 0, y: 15.1999998, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -394,7 +394,7 @@ MonoBehaviour:
   cueBall: {fileID: 546145797}
   redBalls: {fileID: 1453233146}
   mainCamera: {fileID: 987905016}
-  maxForce: 6500
+  maxForce: 7000
   minForce: 250
   strikeDirection: {x: 0, y: 0, z: 0}
 --- !u!4 &525280267
