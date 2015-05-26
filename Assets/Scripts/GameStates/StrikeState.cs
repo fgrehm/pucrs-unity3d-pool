@@ -8,7 +8,7 @@ namespace GameStates {
 		private GameObject cue;
 		private GameObject cueBall;
 
-		private float speed = 5f;
+		private float speed = 30f;
 		private float force = 0f;
 		
 		public StrikeState(MonoBehaviour parent) : base(parent) { 
@@ -23,10 +23,11 @@ namespace GameStates {
 
 		public override void FixedUpdate () {
 			var distance = Vector3.Distance(cue.transform.position, cueBall.transform.position);
+			Debug.Log(distance);
 			if (distance < PoolGameController.MIN_DISTANCE) {
 				cueBall.GetComponent<Rigidbody>().AddForce(gameController.strikeDirection * force);
 				cue.GetComponent<Renderer>().enabled = false;
-				cue.transform.Translate(Vector3.down);
+				cue.transform.Translate(Vector3.down * speed * Time.fixedDeltaTime);
 				gameController.currentState = new GameStates.WaitingForNextTurnState(gameController);
 			} else {
 				cue.transform.Translate(Vector3.down * speed * -1 * Time.fixedDeltaTime);
